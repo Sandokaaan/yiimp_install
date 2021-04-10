@@ -196,11 +196,24 @@
     echo
     sleep 3
     
-    apt_install libgmp3-dev libmysqlclient-dev libcurl4-gnutls-dev libkrb5-dev libldap2-dev libidn11-dev gnutls-dev \
-    librtmp-dev sendmail mutt screen git
+    apt_install libgmp3-dev  -y
+    apt_install libmysqlclient-dev -y
+    apt_install libcurl4-gnutls-dev -y
+    apt_install libkrb5-dev -y
+    apt_install libldap2-dev -y
+    apt_install libidn11-dev -y
+    apt_install gnutls-dev -y
+    apt_install librtmp-dev -y
+    apt_install sendmail -y
+    apt_install mutt -y
+    apt_install screen -y
+    apt_install git -y
+    apt_install libmariadb-dev-compat -y
+    apt_install libmariadb-dev -y
+    apt_install libcurl4-openssl-dev -y
     apt_install pwgen -y
     echo -e "$GREEN Done...$COL_RESET"
-	sleep 3
+    sleep 3
 
     
     # Installing Package to compile crypto currency
