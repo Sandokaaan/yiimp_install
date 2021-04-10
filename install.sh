@@ -359,7 +359,6 @@
     echo
     echo -e "$CYAN => Installing Yiimp $COL_RESET"
     echo
-    echo -e "Grabbing yiimp fron Github, building files and setting file structure."
     echo
     sleep 3
     
@@ -369,7 +368,7 @@
     
     # Compil Blocknotify
     cd ~
-    hide_output git clone https://github.com/tpruvot/yiimp
+    hide_output git clone https://github.com/Sandokaaan/YIIMP
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     hide_output sudo make
